@@ -8,8 +8,18 @@ header{
     align-items: center;
 }
 .logo{
-    width: 4px;
+    max-width: 50px;
     height: auto;
+    display:block;
+}
+.logo img{
+    width: 50px;
+    height: auto;
+}
+
+.telefono{
+    color:  yellowgreen;
+    margin: 0;
 }
 
 nav ul{
@@ -18,37 +28,119 @@ nav ul{
 }
 
 nav ul li{
-    margin: 2px;
+    margin:0 10px;
 }
 
 nav ul li a{
-    color: white;
+    color: yellowgreen;
     text-decoration: none;
     font-weight: bold;
 
+
+}
+
+nav ul li a:hover{
+    color: yellow
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body{
+    background-color: black;
+    font-family:'Roboto', sans-serif;
 }
 
 
 
-
-
-.Portada{
+.hero{
     position:relative;
+    text-align: center;
     width: 100%;
     height: 100%;
     overflow: hidden;
+    background-color: black;
 }
-.imagen-header{
+.imagen_header{
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
 }
-.titulo-header{
-    position: absolute;
-    top: 50%;
+.titulo_header{
+    position:absolute;
+    top: 10%;
     left: 50%;
-    transform: translate(50%, 50%);
-    color: black;
-    font-size: 2rem;
+    transform: translate(-50%, -50%);
+    color: yellow;
+    font-size: 3rem;
     text-align: center;
+    z-index: 1;
+}
+
+#porfolio {
+    text-align: center;
+    display: block;
+    position: static;
+    line-height: normal;
+    color: yellowgreen;
+}
+.celda {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    
+}
+
+.celda img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.celda h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    color: yellowgreen;
+}
+.celda p {
+    font-family: 'Times New Roman', Times, serif;
+    position: static;
+    display: block;
+    line-height: normal;
+    color: yellowgreen;
+
+}
+footer{
+    margin-top: 20px;
+    padding: 1rem;
+    color: yellowgreen;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .titulo_header {
+        font-size: 2.5rem;
+    }
+
+    .celda {
+        grid-template-columns: 1fr;
+    }
+}
+
+html{
+    scroll-behavior: smooth;
 }
