@@ -21,6 +21,23 @@ header{
     color:  yellowgreen;
     margin: 0;
 }
+.boton-llamar {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #ffc107;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .boton-llamar:hover {
+    background-color: #e0a800;
+    transform: scale(1.05);
+  }
 
 nav ul{
     display: flex;
