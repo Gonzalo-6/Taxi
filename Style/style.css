@@ -39,6 +39,16 @@ header{
     transform: scale(1.05);
   }
 
+  @media (max-width: 768px) {
+    .telefono {
+      width: 100%;
+      text-align: center;
+      margin-top: 1rem;
+      flex: 1;
+    }
+  }
+  
+
 nav ul{
     display: flex;
     list-style: none;
@@ -83,14 +93,10 @@ body{
     object-fit: cover;
 }
 .titulo_header{
-    display: flex;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     color: yellow;
     font-size: 3rem;
     text-align: center;
-    z-index: 1;
+    margin: 2rem 0;
 
 }
 
@@ -111,7 +117,7 @@ body{
 
 .celda img {
     width: 100%;
-    height: auto;
+    height: 300px;
     object-fit: cover;
     border-radius: 8px;
 }
@@ -121,9 +127,7 @@ body{
     color: yellowgreen;
 }
 .celda p {
-    font-family: 'Times New Roman', Times, serif;
-    position: static;
-    display: block;
+    font-family: 'Times New Roman', Times, serif
     line-height: normal;
     color: yellowgreen;
 
