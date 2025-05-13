@@ -81,6 +81,11 @@ body{
     font-family:'Roboto', sans-serif;
     padding-top: 70px;
 }
+@media (max-width: 768px) {
+    body {
+        padding-top: 120px; /* Ajusta este valor según el alto real del header en móvil */
+    }
+}
 
 
 
