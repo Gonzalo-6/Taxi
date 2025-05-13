@@ -83,7 +83,7 @@ body{
 }
 @media (max-width: 768px) {
     body {
-        padding-top: 120px; /* Ajusta este valor según el alto real del header en móvil */
+        padding-top: 200px; /* Ajusta este valor según el alto real del header en móvil */
     }
 }
 
